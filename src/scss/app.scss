@@ -1,0 +1,8 @@
+/*la forma antigua de mandar a llamar las carpetas
+@import 'base/variables';
+@import 'contenido/contenido';
+*/
+
+@use 'base';
+@use 'layout';
+

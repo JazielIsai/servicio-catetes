@@ -1,0 +1,81 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+
+.servicio-producto {
+    height: 100vh;
+    width: 100vw;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    column-gap: 2rem;
+    padding: 0 3rem;
+    
+    .producto-img {
+        grid-column: 2 / 3;
+        img{
+            max-width: 100%;
+        }
+    }
+
+    .producto-info {
+        grid-row: 1 / 2;
+        grid-column: 1 / 2;
+        
+        p {
+            text-align: justify;
+        }
+        
+        .producto-info-p{
+            font-size:1.6rem;
+        }
+        
+        button {
+            padding: 1rem;
+            background-color: v.$verdoso;
+            cursor: pointer;
+            color: v.$blanco;
+            border-radius: 10px;
+            border-width: 0;
+            box-shadow: 0px 0px 8px 6px rgba(115,194,255,1);
+            width: 35%;
+            transition: background, color;
+            transition-duration: 1s;
+
+            @include m.tablet {
+                width: 70%;
+                
+            }
+
+            @include m.telefono {
+                width: 100%;
+            }
+        }
+        
+        @include m.tablet {
+            text-align: center;
+            
+        }
+
+        button:active {
+            transform: scale(0.9);
+        }
+    
+        button:hover{
+            background-color: v.$azulclaro;
+            color: v.$negro;
+        
+        }
+    }
+    
+    @include m.tablet {
+        width: 100%;
+        height: 100%;
+        display: block;
+        padding-top: 2rem;
+    }
+}
