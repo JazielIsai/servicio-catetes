@@ -384,6 +384,10 @@ h3 {
   font-size: 3rem;
 }
 
+img {
+  max-width: 100%;
+}
+
 .header {
   background-color: #1a9ea7;
   display: flex;
@@ -670,15 +674,15 @@ h3 {
   border-radius: 50%;
 }
 .testimonial .card .testimonial-card .testimonial-card-img-1 {
-  background-image: url(../../../img/rostro-de-un-criminal.jpg);
+  background-image: url(../../../build/img/cara-house.jpg);
   background-size: cover;
 }
 .testimonial .card .testimonial-card .testimonial-card-img-2 {
-  background-image: url(../../../img/cara-hombre-sonriendo.jpg);
+  background-image: url(../../../build/img/cara-hombre.jpg);
   background-size: cover;
 }
 .testimonial .card .testimonial-card .testimonial-card-img-3 {
-  background-image: url(../../../img/archetypal-female-_3249633c.jpg);
+  background-image: url(../../../build/img/cara-mujer.jpg);
   background-size: cover;
 }
 .testimonial .card .testimonial-card .testimonial-card-info {
@@ -715,6 +719,9 @@ h3 {
   align-items: center;
   align-content: center;
 }
+.footer p {
+  font-size: 1.3rem;
+}
 .footer .footer-title {
   text-align: justify;
   color: #ffffff;
@@ -739,6 +746,10 @@ h3 {
 }
 .footer .footer-container .footer-redesSociales h3 {
   font-size: 2rem;
+}
+.footer .footer-container .footer-redesSociales a {
+  text-decoration: none;
+  color: #ffffff;
 }
 
 /*la forma antigua de mandar a llamar las carpetas

@@ -11,6 +11,10 @@
     align-items: center;
     align-content: center;
 
+    p{
+        font-size: 1.3rem;
+    }
+
     .footer-title {
         text-align: justify;
         color: v.$blanco;
@@ -38,6 +42,11 @@
 
             h3{
                 font-size:2rem;
+            }
+
+            a{
+                text-decoration:none;
+                color: v.$blanco;
             }
         }
 

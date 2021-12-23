@@ -1,10 +1,17 @@
-const { src, dest, watch } = require('gulp');
+const { src, dest, watch, parallel } = require('gulp');
+
+//CSS
 const sass = require('gulp-sass')(require('sass'));
 const plumber = require('gulp-plumber');
 
-function css( done ){
+//Image
+const cache = require('gulp-cache');
+const imagemin = require('gulp-imagemin');
+const webp = require('gulp-webp');
 
-    
+
+
+function css( done ){    
     src('src/scss/**/*.scss') //Identificar el archivo .scss a compilar
         .pipe( plumber() )
         .pipe( sass() )  //compilar el archivo
@@ -14,14 +21,38 @@ function css( done ){
     done();
 }
 
+function image (done) {
+    const options = {
+        optimizationLevel: 3
+    };
+
+    src('src/img/**/*.{jpg, png, ico}')
+        .pipe ( cache ( imagemin(options) ) )
+        .pipe( dest ('./build/img') )   
+    done();
+}
+
+function versionWebp (done) {
+
+    const options = {
+        quality: 50
+    };
+
+    src('src/img/**/*.{jpg, png, ico}')
+        .pipe( webp(options) )
+        .pipe( dest('./build/img'))
+
+    done();
+}
+
 function dev( done ) {
 
     watch('src/scss/**/*.scss', css);
-
-
 
     done();
 }
 
 exports.css = css;
-exports.dev = dev;
+exports.image = image;
+exports.versionWebp = versionWebp;
+exports.dev = parallel(image,versionWebp,dev);
