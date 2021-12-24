@@ -19,12 +19,19 @@
         grid-column: 2 / 3;
         img{
             max-width: 100%;
+            border-radius: 59px;
+            box-shadow:  32px 32px 35px #cccccc,
+            -32px -32px 35px #f4f4f4;
         }
     }
 
     .producto-info {
         grid-row: 1 / 2;
         grid-column: 1 / 2;
+
+        h2 {
+            color: v.$verdoso;
+        }
         
         p {
             text-align: justify;
