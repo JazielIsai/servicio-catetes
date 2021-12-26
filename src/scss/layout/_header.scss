@@ -25,7 +25,8 @@
         
         img{
             max-width: 100%;
-            filter: drop-shadow(-16px -16px 16px v.$negro);
+            box-shadow:  -32px -32px 35px #c5c5c5,
+                         32px 32px 35px #fbfbfb;
         }
         
         @include m.tablet{

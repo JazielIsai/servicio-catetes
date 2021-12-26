@@ -395,6 +395,10 @@ img {
   align-items: center;
   padding: 20px;
   width: 100%;
+  /*Para que quede estatico la barra es con este sencillo codifo css*/
+  position: sticky;
+  top: 0;
+  opacity: 95%;
 }
 @media (max-width: 768px) {
   .header {
@@ -486,7 +490,7 @@ img {
 }
 .header-info .header-img img {
   max-width: 100%;
-  filter: drop-shadow(-16px -16px 16px #000000);
+  box-shadow: -32px -32px 35px #c5c5c5, 32px 32px 35px #fbfbfb;
 }
 @media (max-width: 768px) {
   .header-info .header-img {
@@ -549,7 +553,7 @@ img {
   height: 100%;
   max-width: 80%;
   border-radius: 50px;
-  filter: drop-shadow(16px 16px 16px #000000);
+  box-shadow: 32px 32px 53px #696969, -32px -32px 53px #ffffff;
 }
 
 .servicio-producto {

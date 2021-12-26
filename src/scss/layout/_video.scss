@@ -13,6 +13,7 @@
         height: 100%;
         max-width: 80%;
         border-radius: 50px;
-        filter: drop-shadow(16px 16px 16px v.$negro);
+        box-shadow:  32px 32px 53px #696969,
+                    -32px -32px 53px #ffffff;
     }
 }
