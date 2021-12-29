@@ -26,6 +26,12 @@
     }
 }
 
+@mixin tabletPro {
+    @media (max-width: v.$tabletPro){
+        @content;
+    }
+}
+
 @mixin desktop {
     @media (max-width: v.$desktop) {
         @content;

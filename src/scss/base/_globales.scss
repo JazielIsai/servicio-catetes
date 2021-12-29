@@ -9,12 +9,17 @@ html{
 *:before,
 *:after {
     box-sizing: inherit;
+    max-width: 100%;
 }
 
 
 body {
     font-family: v.$fuenteMartel;
     font-size: 1.6rem;
+
+    &.figar-body {
+        overflow: hidden;
+    }
 }
 
 p{
