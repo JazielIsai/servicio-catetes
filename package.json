@@ -11,7 +11,7 @@
     "SASS",
     "GULP"
   ],
-  "author": "Jaziel Isai Perez",
+  "author": "Jaziel Isaí Pérez Garrido",
   "license": "ISC",
   "devDependencies": {
     "autoprefixer": "^10.4.1",
