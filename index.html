@@ -1,242 +1,93 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="es-MX">
 <head>
-    <meta charset="UTF-8">
-    <link rel="icon" href="./build/img/cofia y alas.png" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Servicio catetes</title>
-
-    <!--fonts google-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Caramel&family=Cinzel+Decorative&family=IM+Fell+Great+Primer&family=Martel:wght@400;700&display=swap" rel="stylesheet">
-
-
-    <link rel="stylesheet" href="./build/css/app.css" />
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f9fb">
+  <meta name="description" content="Conoce el servicio de catéteres PICC y las características del dispositivo PowerPICC.">
+  <link rel="icon" href="./build/img/cofia%20y%20alas.png">
+  <link rel="preload" as="image" href="./build/img/enfermera-medica-ajustando-cateter.webp">
+  <link rel="stylesheet" href="./build/css/app.css">
+  <title>Servicio de catéteres PICC</title>
 </head>
-
 <body>
-    <!--Inicio el header - navegador-->
-    <header class="header">
-            <h2>SC</h2>
-            <nav class="navegacion-principal">
-                <ul>
-                    <li> <a href="">Inicio</a> </li>
-                    <li> <a href="">Nosotros</a> </li>
-                    <li> <a href="">Productos</a> </li>
-                    <li> <a href="">Contacto</a> </li>
-                </ul>
-            </nav>
-    </header>
-
-    <div class="inicio-header">
-
-        <div class="header-info">
-            <div class="header-img">
-                <picture>
-                    <source srcset="build/img/enfermera-medica-ajustando-cateter.webp" type="image/webp" >
-                    <source srcset="build/img/enfermera-medica-ajustando-cateter.jpg" type="image/jpg">
-
-                    <img src="./build/img/enfermera-medica-ajustando-cateter.jpg" alt="Cateter y efermera">
-                </picture>
-            </div>
-            <div class="header-info-text">
-                <h1> Catetes Power Pic </h1>
-                <div class="header-description">
-                    <p>Nuestro deber y compromiso es entregar la mejor atención al paciente con el mayor cuidado y con las mejores implementaciones para cuidar su salud  </p>
-                    <picture>
-                        <source srcset="build/img/picture-of-a-nurse.webp" type="image/webp" >
-                        <source srcset="build/img/picture-of-a-nurse.png" type="image/png">
-                         
-                        <img class="header-img" src="./build/img/picture-of-a-nurse.png" alt="">
-                    </picture>
-
-                </div>
-            </div>
-        </div>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#inicio" aria-label="Servicio de catéteres, ir al inicio"><span class="brand-mark" aria-hidden="true">+</span><span>Servicio de catéteres</span></a>
+      <nav class="site-nav" aria-label="Navegación principal">
+        <a href="#servicio">El servicio</a>
+        <a href="#dispositivo">El dispositivo</a>
+        <a href="#preguntas">Preguntas frecuentes</a>
+      </nav>
     </div>
-    
-    <!--video pagina inicio-->
-    <div class="video">
-        <video autoplay muted loop controls>
-            <source src="./video/InicioClausuraITSP.mp4" type="video/mp4" >
-            <source src="" type="video/ogg" >
-            <source src="" type="video/webm" >
-        </video>
-    </div>
-
-    <!--Seccion de lo que ofrecemos los cateters de power pic -->
-    <section class="servicio-producto" id="">
-        <div class="producto-img">
-            <picture>
-                <source srcset="build/img/catheter-1.webp" type="image/webp" >
-                <source srcset="build/img/catheter-1.jpg" type="image/jpg">
-                 
-                <img src="./build/img/catheter-1.jpg" alt="">
-            </picture>
+  </header>
+  <main id="contenido">
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <p class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span> Atención centrada en el paciente</p>
+          <h1 id="hero-title">Cuidado en cada <span>acceso.</span></h1>
+          <p class="hero-lead">Información clara sobre el servicio de catéteres PICC y el dispositivo PowerPICC para pacientes y profesionales de la salud.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#servicio">Conoce el servicio <span aria-hidden="true">↗</span></a>
+            <a class="text-link" href="#dispositivo">Explora el dispositivo <span aria-hidden="true">→</span></a>
+          </div>
         </div>
-        <div class="producto-info">
-            <h2>Cateter Power PIC</h2>
-            <p>La mejor calidad y el mejor servicio</p>
-            <p class="producto-info-p">Catéter venoso central de inserción periférica (PICC) de poliuretano radiopaco con un diseño de cono inverso, que resfuerza la porción externa del catéter. Es además resistente al enroscamiento y a las altas presiones (300 psi), permitiendo la inyección de medios de contraste, con un poder de inyección hasta 5 ml/seg. Compatible con el dispositivo Statlock para su fijación. Disponible en 5 FR y 6 FR doble lumen y 6 FR triple lumen con un kit con una guía de nitinol larga de 135 cm. </p>
-            <button class="btn "  > Ver el Producto </button>
+        <div class="hero-visual">
+          <picture><source srcset="./build/img/enfermera-medica-ajustando-cateter.webp" type="image/webp"><img src="./build/img/enfermera-medica-ajustando-cateter.jpg" width="626" height="417" alt="Profesional de la salud atendiendo el brazo de una persona durante un procedimiento con catéter"></picture>
+          <div class="hero-caption"><span class="caption-icon" aria-hidden="true">✳</span><span>Atención con cuidado y precisión</span></div>
         </div>
+      </div>
     </section>
-
-
-    <section class="galeria contenedor">
-        <h3>Galeria</h3>
-
-        <ul class="galeria-imagenes">
-             
-        </ul>
+    <section class="intro section" id="servicio" aria-labelledby="servicio-title">
+      <div class="container">
+        <div class="section-heading">
+          <div><p class="eyebrow">01 / El servicio</p><h2 id="servicio-title">Una experiencia más clara, desde el principio.</h2></div>
+          <p>Conocer el procedimiento ayuda a tomar decisiones informadas. Aquí encontrarás una explicación sencilla del acceso PICC y del dispositivo presentado en este sitio.</p>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card"><span class="feature-icon" aria-hidden="true">01</span><h3>Qué es un PICC</h3><p>Es un catéter venoso central que se introduce a través de una vena periférica. Su indicación depende de la valoración del equipo de salud.</p></article>
+          <article class="feature-card"><span class="feature-icon" aria-hidden="true">02</span><h3>Para quién es</h3><p>El equipo tratante determina si este tipo de acceso es adecuado según las necesidades y condiciones de cada paciente.</p></article>
+          <article class="feature-card"><span class="feature-icon" aria-hidden="true">03</span><h3>Qué sigue después</h3><p>La colocación, el uso y los cuidados posteriores deben seguir las indicaciones del personal de salud responsable.</p></article>
+        </div>
+      </div>
     </section>
-
-    <!--Proveedores del producto
-    <section class="proveedores" id="">
-        <div class="proveedores-title">
-            <h2>Empresa proveedora</h2>
+    <section class="product section" id="dispositivo" aria-labelledby="dispositivo-title">
+      <div class="container product-grid">
+        <div class="product-visual">
+          <picture><source srcset="./build/img/catheter-1.webp" type="image/webp"><img src="./build/img/catheter-1.jpg" width="1400" height="600" loading="lazy" alt="Detalle de un catéter venoso colocado en el brazo de un paciente"></picture>
+          <span class="image-note">Imagen ilustrativa</span>
         </div>
-        <div class="proveedores-logos">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
+        <div class="product-content">
+          <p class="eyebrow">02 / El dispositivo</p>
+          <h2 id="dispositivo-title">PowerPICC, en detalle.</h2>
+          <p class="product-lead">Un catéter venoso central de inserción periférica, presentado para que conozcas sus características principales.</p>
+          <ul class="spec-list">
+            <li><span class="spec-icon" aria-hidden="true">✓</span><span>Fabricado en poliuretano radiopaco.</span></li>
+            <li><span class="spec-icon" aria-hidden="true">✓</span><span>Diseño de cono inverso y resistencia al enroscamiento, según la descripción del producto.</span></li>
+            <li><span class="spec-icon" aria-hidden="true">✓</span><span>Disponible en configuraciones de doble y triple lumen.</span></li>
+          </ul>
+          <p class="product-note">Las especificaciones y la elección del dispositivo deben confirmarse con la ficha técnica vigente y el equipo de salud.</p>
+          <a class="product-link" href="https://www.bd.com/en-us/products-and-solutions/products/product-families/powerpicc-catheter">Consultar información del fabricante <span aria-hidden="true">↗</span></a>
         </div>
+      </div>
     </section>
-    -->
-    
-    <!--Testimoniales-->
-    <section class="testimonial">
-        <div class="testimonial-title">
-            <h2>Testimoniales</h2>
+    <section class="faq section" id="preguntas" aria-labelledby="preguntas-title">
+      <div class="container faq-grid">
+        <div class="faq-heading"><p class="eyebrow">03 / Preguntas frecuentes</p><h2 id="preguntas-title">Lo esencial, sin complicaciones.</h2><p>Respuestas breves para orientar la conversación con el equipo de salud.</p></div>
+        <div class="faq-list">
+          <details><summary>¿Qué significa PICC?<span aria-hidden="true">+</span></summary><p>Son las siglas en inglés de catéter central de inserción periférica. Se introduce por una vena del brazo y llega a una vena de mayor tamaño.</p></details>
+          <details><summary>¿Quién decide si necesito uno?<span aria-hidden="true">+</span></summary><p>El equipo tratante evalúa la necesidad del acceso, el tipo de tratamiento y las condiciones de cada persona.</p></details>
+          <details><summary>¿Dónde consulto los cuidados posteriores?<span aria-hidden="true">+</span></summary><p>Pide instrucciones específicas al personal de salud que realice la colocación o dé seguimiento al tratamiento.</p></details>
         </div>
-        <!--Card testimonial-->
-        <div class="card">
-            <div class="testimonial-card">
-                <div class="testimonial-card-img-1"></div>
-                <div class="testimonial-card-info">
-                    <h3> House Hernandez  </h3>
-                    <p>Tengo la vena delgada y antes de conocer este producto me dejaban picoteada y hoy no recibi mas que un piquete. </p>
-                    <div class="testimonial-card-info-social">
-                        <a href=""> 
-                            <picture>
-                                <source srcset="build/img/iconos/facebook.webp" type="image/webp" >
-                                <source srcset="build/img/iconos/facebook.png" type="image/jpg">
-                                 
-                                <img src="./build/img/iconos/facebook.png" alt="Facebook" > 
-                            </picture>
-                        </a>
-                        <a href="">
-                            <picture>
-                                <source srcset="build/img/iconos/instagram.webp" type="image/webp" >
-                                <source srcset="build/img/iconos/instagram.png" type="image/jpg">
-                                 
-                                <img src="./build/img/iconos/instagram.png" alt="Insagram"> 
-                            </picture>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="testimonial-card">
-                <div class="testimonial-card-img-2"></div>
-                <div class="testimonial-card-info">
-                    <h3> Fernando Garcia </h3>
-                    <p>El servicio me parece muy interesante etc... </p>
-                    <div class="testimonial-card-info-social">
-                        <a href=""> 
-                            <picture>
-                                <source srcset="build/img/iconos/facebook.webp" type="image/webp" >
-                                <source srcset="build/img/iconos/facebook.png" type="image/jpg">
-                                 
-                                <img src="./build/img/iconos/facebook.png" alt="Facebook" > 
-                            </picture>
-                        </a>
-                        <a href="">
-                            <picture>
-                                <source srcset="build/img/iconos/instagram.webp" type="image/webp" >
-                                <source srcset="build/img/iconos/instagram.png" type="image/jpg">
-                                 
-                                <img src="./build/img/iconos/instagram.png" alt="Insagram"> 
-                            </picture>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="testimonial-card">
-                <div class="testimonial-card-img-3"></div>
-                <div class="testimonial-card-info">
-                    <h3> Mariel Govea </h3>
-                    <p>La atencion me parece exelente, gracias a este producto no me dolio nada y no tuvieron que  etc... </p>
-                    <div class="testimonial-card-info-social">
-                        <a href=""> 
-                            <picture>
-                                <source srcset="build/img/iconos/facebook.webp" type="image/webp" >
-                                <source srcset="build/img/iconos/facebook.png" type="image/jpg">
-                                 
-                                <img src="./build/img/iconos/facebook.png" alt="Facebook" > 
-                            </picture>
-                        </a>
-                        <a href="">
-                            <picture>
-                                <source srcset="build/img/iconos/instagram.webp" type="image/webp" >
-                                <source srcset="build/img/iconos/instagram.png" type="image/jpg">
-                                 
-                                <img src="./build/img/iconos/instagram.png" alt="Insagram"> 
-                            </picture>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            
-        </div>
+      </div>
     </section>
-
-    <footer class="footer">
-
-        <div class="footer-title">
-            <h2>Servicio de catetes SC</h2>
-        </div>
-
-        
-        <div class="footer-container">
-            <div class="footer-nav">
-                <nav class="navegacion-principal">
-                    <ul>
-                        <li> <a href="">Inicio</a> </li>
-                        <li> <a href="">Nosotros</a> </li>
-                        <li> <a href="">Productos</a> </li>
-                        <li> <a href="">Contacto</a> </li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="footer-redesSociales">
-                <h3>Contactanos:</h3>
-                <a href=""> 
-                    <picture>
-                        <source srcset="build/img/iconos/facebook.webp" type="image/webp" >
-                        <source srcset="build/img/iconos/facebook.png" type="image/jpg">
-                         
-                        <img src="./build/img/iconos/facebook.png" alt="Facebook" > 
-                    </picture> <br>
-                    Facebook
-                </a>
-                <a href="#">
-                    <picture>
-                        <source srcset="build/img/iconos/Phone_31105.webp" type="image/webp" >
-                        <source srcset="build/img/iconos/Phone_31105.png" type="image/jpg">
-                         
-                        <img src="./build/img/iconos/Phone_31105.png" alt=""> <br>
-                    </picture>
-                    Telefono
-                </a>
-            </div>
-        </div>
-        <p> Todos los derechos reservados &copy 2022. </p>
-    </footer>
-
-    <script src="./build/js/galeria.js"> </script>
+  </main>
+  <footer class="site-footer"><div class="container footer-inner">
+    <a class="brand" href="#inicio"><span class="brand-mark" aria-hidden="true">+</span><span>Servicio de catéteres</span></a>
+    <p>Información general sobre catéteres PICC. No sustituye la valoración médica.</p>
+    <a href="#inicio" class="footer-top">Volver arriba ↑</a>
+  </div></footer>
 </body>
-
 </html>
