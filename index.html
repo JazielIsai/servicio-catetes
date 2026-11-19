@@ -16,7 +16,8 @@
   <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="./build/img/cofia%20y%20alas.png">
   <link rel="preload" as="image" href="./build/img/enfermera-medica-ajustando-cateter.webp">
-  <link rel="stylesheet" href="./build/css/app.css?v=8">
+  <script src="./theme.js?v=9"></script>
+  <link rel="stylesheet" href="./build/css/app.css?v=9">
   <title>Catéteres PICC | Información para pacientes y profesionales</title>
   <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"WebSite","name":"Servicio de catéteres PICC","url":"https://jazielisai.github.io/servicio-catetes/","inLanguage":"es-MX","author":{"@type":"Person","name":"Jaziel Isaí Pérez Garrido","url":"https://isai-dev.com"}}
@@ -33,6 +34,14 @@
         <a href="#dispositivo">El dispositivo</a>
         <a href="#contacto">Atención</a>
       </nav>
+      <div class="theme-picker">
+        <label for="theme-select">Tema</label>
+        <select id="theme-select" aria-label="Tema de la página">
+          <option value="auto">Automático</option>
+          <option value="light">Claro</option>
+          <option value="dark">Oscuro</option>
+        </select>
+      </div>
     </div>
   </header>
   <div class="demo-banner" id="demo-banner" role="status">
@@ -222,5 +231,6 @@
   </footer>
   <script src="./site-config.js?v=8"></script>
   <script src="./site.js?v=8"></script>
+  <script src="./motion.js?v=9"></script>
 </body>
 </html>

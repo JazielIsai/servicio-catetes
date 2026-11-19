@@ -13,6 +13,8 @@ npm run build:css
 
 Durante el desarrollo puedes usar `npm run watch:css`. Después de cada cambio de estilos, incluye `build/css/app.css` en el commit para que GitHub Pages publique la versión compilada. La compilación usa Tailwind CLI y no necesita JavaScript en el navegador.
 
+El selector **Tema** permite elegir automático, claro u oscuro. La preferencia se guarda en el navegador; en automático sigue los cambios del sistema. Las entradas suaves al desplazarse se desactivan cuando el sistema solicita movimiento reducido.
+
 ## Actualizar datos del servicio
 
 Edita **solo `site-config.js`** para sustituir los datos de demostración:
