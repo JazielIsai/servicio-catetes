@@ -4,19 +4,19 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#f7f9fb">
-  <meta name="description" content="Una guía clara sobre los catéteres PICC: qué son, cuándo se valoran, qué preguntar al equipo de salud y las características de PowerPICC.">
+  <meta name="description" content="Sitio de demostración: guía informativa sobre catéteres PICC, preguntas para el equipo de salud y características de PowerPICC. No ofrece atención clínica.">
   <meta name="author" content="Jaziel Isaí Pérez Garrido">
   <link rel="canonical" href="https://jazielisai.github.io/servicio-catetes/">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="es_MX">
-  <meta property="og:title" content="Catéteres PICC | Información clara para decidir">
-  <meta property="og:description" content="Conoce el acceso PICC, el dispositivo PowerPICC y las preguntas que vale la pena llevar a tu consulta.">
+  <meta property="og:title" content="Catéteres PICC | Guía de demostración">
+  <meta property="og:description" content="Vista previa informativa para pacientes y profesionales. No ofrece atención clínica; los datos del servicio son ejemplos.">
   <meta property="og:url" content="https://jazielisai.github.io/servicio-catetes/">
   <meta property="og:image" content="https://jazielisai.github.io/servicio-catetes/build/img/enfermera-medica-ajustando-cateter.jpg">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="./build/img/cofia%20y%20alas.png">
   <link rel="preload" as="image" href="./build/img/enfermera-medica-ajustando-cateter.webp">
-  <link rel="stylesheet" href="./build/css/app.css?v=7">
+  <link rel="stylesheet" href="./build/css/app.css?v=8">
   <title>Catéteres PICC | Información para pacientes y profesionales</title>
   <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"WebSite","name":"Servicio de catéteres PICC","url":"https://jazielisai.github.io/servicio-catetes/","inLanguage":"es-MX","author":{"@type":"Person","name":"Jaziel Isaí Pérez Garrido","url":"https://isai-dev.com"}}
@@ -99,6 +99,10 @@
       <div class="container">
         <div class="section-heading"><div><p class="eyebrow">Alcance del servicio</p><h2 id="services-title">Servicios que deben quedar claros.</h2></div><p>Consulta el alcance disponible antes de solicitar atención. La valoración y las indicaciones siempre corresponden al personal clínico responsable.</p></div>
         <div class="grid grid-cols-3 gap-4 max-[700px]:grid-cols-1" id="service-grid"></div>
+        <div class="decision-panel">
+          <div><p class="eyebrow">Antes de solicitar atención</p><h3>Confirma estos puntos con el responsable.</h3><p>Estas preguntas ayudan a aclarar el alcance y el seguimiento. <span data-demo-only>El servicio mostrado aquí es un ejemplo sin disponibilidad real.</span></p></div>
+          <ul id="before-request-list"></ul>
+        </div>
         <noscript><p>Activa JavaScript para ver los datos del servicio configurados para este sitio.</p></noscript>
       </div>
     </section>
@@ -114,6 +118,11 @@
             <div><dt>Formación</dt><dd data-site-text="clinician.credentials">Por confirmar</dd></div>
             <div><dt>Registro profesional</dt><dd data-site-text="clinician.registration">Por confirmar</dd></div>
           </dl>
+          <div class="review-state" aria-label="Estado de revisión del contenido clínico">
+            <strong data-site-text="clinicalReview.status">Revisión clínica pendiente</strong>
+            <span data-site-text="clinicalReview.reviewer">Profesional revisor por designar</span>
+            <span data-site-text="clinicalReview.date">Fecha de revisión por confirmar</span>
+          </div>
         </div>
       </div>
     </section>
@@ -186,6 +195,12 @@
         </aside>
       </div>
     </section>
+    <section class="share-section" aria-labelledby="share-title">
+      <div class="container share-inner">
+        <div><p class="eyebrow">Comparte información clara</p><h2 id="share-title">Una guía para preparar la conversación.</h2><p>Puedes compartir esta página con quien necesite preparar preguntas para su equipo de salud. <span data-demo-only>Esta versión es una demostración informativa; incluye ese contexto al compartirla.</span></p></div>
+        <div class="share-action"><button class="button button-primary" type="button" id="share-button">Copiar texto para compartir <span aria-hidden="true">↗</span></button><p id="share-feedback" role="status" aria-live="polite"></p></div>
+      </div>
+    </section>
   </main>
   <footer class="site-footer">
     <div class="container footer-inner">
@@ -205,7 +220,7 @@
       <a href="https://isai-dev.com" rel="author">isai-dev.com ↗</a>
     </div>
   </footer>
-  <script src="./site-config.js"></script>
-  <script src="./site.js"></script>
+  <script src="./site-config.js?v=8"></script>
+  <script src="./site.js?v=8"></script>
 </body>
 </html>

@@ -7,7 +7,8 @@
   const whatsappNumber = (config.contact?.whatsapp || "").replace(/\D/g, "");
   const emailAddress = (config.contact?.email || "").trim();
   const hasContact = /^\d{10,15}$/.test(whatsappNumber) || /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailAddress);
-  const isRealText = (value) => typeof value === "string" && value.trim() && !/ejemplo|por confirmar|nombre del responsable/i.test(value);
+  const isRealText = (value) => typeof value === "string" && value.trim()
+    && !/ejemplo|por confirmar|por designar|pendiente|demostraci[oó]n|de prueba|no disponible/i.test(value);
   const hasRealDetails = [
     config.practice?.name,
     config.practice?.coverage,
@@ -16,9 +17,15 @@
     config.clinician?.name,
     config.clinician?.role,
     config.clinician?.credentials,
-    config.clinician?.registration
+    config.clinician?.registration,
+    config.clinicalReview?.status,
+    config.clinicalReview?.reviewer,
+    config.clinicalReview?.date,
+    config.share?.title,
+    config.share?.text
   ].every(isRealText) && Array.isArray(config.services) && config.services.length > 0
-    && config.services.every((service) => isRealText(service.title) && isRealText(service.description));
+    && config.services.every((service) => isRealText(service.title) && isRealText(service.description))
+    && config.clinicalReview?.verified === true;
   const demo = config.demo !== false || !hasRealDetails || !hasContact;
   const getValue = (path) => path.split(".").reduce((value, key) => value?.[key], config);
 
@@ -30,6 +37,7 @@
   if (!demo) {
     document.getElementById("demo-banner")?.setAttribute("hidden", "");
     document.querySelectorAll("[data-demo-only]").forEach((node) => node.setAttribute("hidden", ""));
+    document.querySelector(".review-state")?.classList.add("review-state--verified");
   }
 
   const photo = document.getElementById("clinician-photo");
@@ -62,6 +70,15 @@
     });
   }
 
+  const beforeRequest = document.getElementById("before-request-list");
+  if (beforeRequest && Array.isArray(config.beforeRequest)) {
+    config.beforeRequest.forEach((point) => {
+      const item = document.createElement("li");
+      item.textContent = point;
+      beforeRequest.append(item);
+    });
+  }
+
   const process = document.getElementById("process-list");
   if (process && Array.isArray(config.process)) {
     config.process.forEach((step) => {
@@ -87,4 +104,21 @@
     actions.hidden = false;
     if (demoNote) demoNote.hidden = true;
   }
+
+  const shareButton = document.getElementById("share-button");
+  const shareFeedback = document.getElementById("share-feedback");
+  shareButton?.addEventListener("click", async () => {
+    const title = config.share?.title || document.title;
+    const description = config.share?.text || "";
+    const url = config.share?.url || window.location.href.split("#")[0];
+    const message = [title, description, url].filter(Boolean).join("\n\n");
+    try {
+      await navigator.clipboard.writeText(message);
+      if (shareFeedback) shareFeedback.textContent = demo
+        ? "Texto y enlace copiados. Incluye el aviso de demostración al compartirlos."
+        : "Texto y enlace copiados.";
+    } catch {
+      if (shareFeedback) shareFeedback.textContent = `Puedes copiar este enlace: ${url}`;
+    }
+  });
 })();

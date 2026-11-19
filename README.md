@@ -19,11 +19,15 @@ Edita **solo `site-config.js`** para sustituir los datos de demostración:
 
 1. Nombre del servicio, cobertura, lugares de atención y horario.
 2. Nombre, cargo, formación, registro profesional y foto autorizada del responsable clínico.
-3. Servicios que realmente se ofrecen y pasos reales para solicitar atención.
-4. WhatsApp con código de país (solo números) o correo de contacto.
-5. Cuando todo sea real y verificable, cambia `demo: true` a `demo: false`.
+3. Nombre y fecha del revisor clínico; cambia `clinicalReview.verified` a `true` solo tras verificar la revisión.
+4. Servicios que realmente se ofrecen, puntos a confirmar y pasos reales para solicitar atención.
+5. WhatsApp con código de país (solo números) o correo de contacto.
+6. Título, texto y enlace para compartir en `share`.
+7. Cuando todo sea real y verificable, cambia `demo: true` a `demo: false`.
 
-Mientras el sitio esté en modo demostración, muestra una advertencia y mantiene desactivados los enlaces de contacto. Si faltan datos esenciales o un contacto válido, permanece en modo demostración aunque se cambie el valor de `demo`.
+Mientras el sitio esté en modo demostración, muestra una advertencia y mantiene desactivados los enlaces de contacto. Si faltan datos esenciales, una revisión clínica verificada o un contacto válido, permanece en modo demostración aunque se cambie el valor de `demo`.
+
+Los metadatos de buscadores y redes están en `index.html`. Antes de presentar el sitio como servicio real, actualízalos para retirar el lenguaje de demostración. El [material de difusión de prueba](promotion/preview.md) contiene textos listos para revisar y una lista de activación.
 
 Las imágenes clínicas actuales son ilustrativas. Antes de usar fotos reales de personas o procedimientos, comprueba que tienes autorización para publicarlas. Confirma las características del producto con la [información del fabricante](https://www.bd.com/en-us/products-and-solutions/products/product-families/powerpicc-catheter).
 
