@@ -1,31 +1,16 @@
 {
   "name": "servicio-catetes",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Página informativa sobre catéteres PICC",
   "scripts": {
-    "sass": "sass --watch src/scss:build/css",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build:css": "tailwindcss -i ./src/styles.css -o ./build/css/app.css --minify",
+    "watch:css": "tailwindcss -i ./src/styles.css -o ./build/css/app.css --watch"
   },
-  "keywords": [
-    "SASS",
-    "GULP"
-  ],
+  "keywords": ["tailwindcss", "github-pages"],
   "author": "Jaziel Isaí Pérez Garrido",
   "license": "ISC",
   "devDependencies": {
-    "autoprefixer": "^10.4.1",
-    "cssnano": "^5.0.14",
-    "gulp": "^4.0.2",
-    "gulp-cache": "^1.1.3",
-    "gulp-imagemin": "^7.1.0",
-    "gulp-plumber": "^1.2.1",
-    "gulp-postcss": "^9.0.1",
-    "gulp-sass": "^5.0.0",
-    "gulp-sourcemaps": "^3.0.0",
-    "gulp-terser-js": "^5.2.2",
-    "gulp-webp": "^4.0.1",
-    "postcss": "^8.4.5",
-    "sass": "^1.45.0"
+    "@tailwindcss/cli": "^4.3.0",
+    "tailwindcss": "^4.3.0"
   }
 }

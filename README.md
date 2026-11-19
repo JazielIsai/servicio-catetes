@@ -2,7 +2,16 @@
 
 Página informativa en español sobre catéteres PICC y el dispositivo PowerPICC. Incluye recorridos para pacientes y profesionales, una guía de preguntas y enlaces a fuentes clínicas y del fabricante.
 
-La página principal está en `index.html`. Los estilos se editan en `src/scss/app.scss` y la versión servida por GitHub Pages está en `build/css/app.css`. Para regenerarla con las dependencias instaladas, ejecuta `npx gulp css`.
+La página principal está en `index.html`. Los estilos se editan en `src/styles.css`: Tailwind CSS 4 genera las utilidades que aparecen en el HTML y el resto del sistema visual permanece en CSS. GitHub Pages sirve el archivo compilado `build/css/app.css`.
+
+Para trabajar con los estilos:
+
+```bash
+npm install
+npm run build:css
+```
+
+Durante el desarrollo puedes usar `npm run watch:css`. Después de cada cambio de estilos, incluye `build/css/app.css` en el commit para que GitHub Pages publique la versión compilada. La compilación usa Tailwind CLI y no necesita JavaScript en el navegador.
 
 ## Actualizar datos del servicio
 
